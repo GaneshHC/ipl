@@ -1,41 +1,43 @@
 package com.wecp.progressive.service.impl;
- 
-import java.util.List;
- 
+
 import com.wecp.progressive.dao.MatchDAO;
 import com.wecp.progressive.entity.Match;
 import com.wecp.progressive.service.MatchService;
- 
-public class MatchServiceImplJdbc implements MatchService  {
-private MatchDAO matchDAO;
- 
+
+import java.sql.SQLException;
+import java.util.List;
+
+public class MatchServiceImplJdbc implements MatchService {
+
+    private MatchDAO matchDAO;
+
+    public MatchServiceImplJdbc(MatchDAO matchDAO) {
+        this.matchDAO = matchDAO;
+    }
+
     @Override
-    public List<Match> getAllMatches() {
-   return List.of();
+    public List<Match> getAllMatches() throws SQLException {
+        return matchDAO.getAllMatches();
     }
- 
-   public MatchServiceImplJdbc(MatchDAO matchDAO) {
-    this.matchDAO = matchDAO;
-}
- 
- @Override
-    public Match getMatchById(int matchId) {
-       return null;
-    }
- 
+
     @Override
-    public Integer addMatch(Match match) {
-      return -1;
+    public Match getMatchById(int matchId) throws SQLException {
+        return matchDAO.getMatchById(matchId);
     }
- 
+
     @Override
-    public void updateMatch(Match match) {
-       
+    public Integer addMatch(Match match) throws SQLException {
+        return matchDAO.addMatch(match);
     }
- 
+
     @Override
-    public void deleteMatch(int matchId) {
-       
+    public void updateMatch(Match match) throws SQLException {
+        matchDAO.updateMatch(match);
     }
- 
+
+    @Override
+    public void deleteMatch(int matchId) throws SQLException {
+        matchDAO.deleteMatch(matchId);
+    }
+
 }
