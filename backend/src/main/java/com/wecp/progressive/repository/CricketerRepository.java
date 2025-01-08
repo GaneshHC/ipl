@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> f2c76cf28480e12a5e7fc657d50183224141e4ec
 package com.wecp.progressive.repository;
 
 import com.wecp.progressive.entity.Cricketer;
@@ -18,10 +21,17 @@ public interface CricketerRepository extends JpaRepository<Cricketer, Integer> {
 
     List<Cricketer> findByTeam_TeamId(int teamId);
 
+<<<<<<< HEAD
     long countByTeam_TeamId(int teamId);
 
+=======
+>>>>>>> f2c76cf28480e12a5e7fc657d50183224141e4ec
     @Modifying
     @Transactional
     @Query("DELETE FROM Cricketer c WHERE c.team.teamId = :teamId")
     void deleteByTeamId(@Param("teamId") int teamId);
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> f2c76cf28480e12a5e7fc657d50183224141e4ec

@@ -1,5 +1,6 @@
 package com.wecp.progressive.service.impl;
 
+<<<<<<< HEAD
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -44,3 +45,8 @@ public class VoteServiceImpl implements VoteService {
     }
 
 }
+=======
+public class VoteServiceImpl  {
+
+}
+>>>>>>> f2c76cf28480e12a5e7fc657d50183224141e4ec

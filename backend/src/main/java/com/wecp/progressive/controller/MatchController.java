@@ -2,12 +2,18 @@ package com.wecp.progressive.controller;
 
 import com.wecp.progressive.entity.Cricketer;
 import com.wecp.progressive.entity.Match;
+<<<<<<< HEAD
 import com.wecp.progressive.exception.NoMatchesFoundException;
+=======
+>>>>>>> f2c76cf28480e12a5e7fc657d50183224141e4ec
 import com.wecp.progressive.service.impl.MatchServiceImplJpa;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+<<<<<<< HEAD
 import org.springframework.security.config.web.server.ServerHttpSecurity.HttpsRedirectSpec;
+=======
+>>>>>>> f2c76cf28480e12a5e7fc657d50183224141e4ec
 import org.springframework.web.bind.annotation.*;
 
 import java.sql.SQLException;
@@ -76,13 +82,20 @@ public class MatchController {
         try {
             List<Match> matchList = matchServiceImplJpa.getAllMatchesByStatus(status);
             return new ResponseEntity<>(matchList, HttpStatus.OK);
+<<<<<<< HEAD
         }catch(NoMatchesFoundException n){
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         } 
         catch (SQLException e) {
+=======
+        } catch (SQLException e) {
+>>>>>>> f2c76cf28480e12a5e7fc657d50183224141e4ec
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
 }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> f2c76cf28480e12a5e7fc657d50183224141e4ec
