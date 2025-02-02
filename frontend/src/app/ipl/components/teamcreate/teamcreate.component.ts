@@ -1,11 +1,12 @@
 import { Component, OnInit } from "@angular/core";
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
-
+import { ReactiveFormsModule } from "@angular/forms";
 @Component({
   selector: 'app-teamcreate',
   templateUrl: './teamcreate.component.html',
   styleUrls: ['./teamcreate.component.scss'] 
 })
+
 export class TeamCreateComponent implements OnInit {
 //   team: any = {
 //     teamId: '',
@@ -24,7 +25,7 @@ export class TeamCreateComponent implements OnInit {
   ngOnInit(): void {
     this.teamForm = this.fb.group({
       teamId: [null, [Validators.required, Validators.minLength(1)]],
-      teamName: ['', [Validators.required, Validators.minLength(2), Validators.pattern(/^[a-zA-Z0-9]+$/)]],
+      teamName: ['', [Validators.required, Validators.minLength(2)]],
       location: ['', Validators.required],
       ownerName: ['', [Validators.required, Validators.minLength(2)]],
       establishmentYear: [null, Validators.required]
