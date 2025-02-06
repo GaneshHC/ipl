@@ -1,5 +1,6 @@
 package com.wecp.progressive.service.impl;
 
+<<<<<<< HEAD
 import com.wecp.progressive.dao.CricketerDAO;
 import com.wecp.progressive.entity.Cricketer;
 import com.wecp.progressive.service.CricketerService;
@@ -49,4 +50,8 @@ public class CricketerServiceImplJdbc implements CricketerService {
     public Cricketer getCricketerById(int cricketerId) throws SQLException {
         return cricketerDAO.getCricketerById(cricketerId);
     }
+=======
+public class CricketerServiceImplJdbc  {
+
+>>>>>>> 3b5d29aab2f1fd95badf39a7a6b0ebb47a4171d1
 }

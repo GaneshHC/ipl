@@ -15,9 +15,15 @@ const routes: Routes = [
   { path: "team", component: TeamCreateComponent },
   { path: "match", component: MatchCreateComponent },
   { path: "cricketer", component: CricketerCreateComponent },
+<<<<<<< HEAD
   { path: "team/edit/:teamId", component: TeamEditComponent },
   { path: "match/edit/:matchId", component: MatchEditComponent },
   { path: "cricketer/edit/:cricketerId", component: CricketerEditComponent },
+=======
+  { path: "team/edit", component: TeamEditComponent },
+  { path: "match/edit", component: MatchEditComponent },
+  { path: "cricketer/edit", component: CricketerEditComponent },
+>>>>>>> 3b5d29aab2f1fd95badf39a7a6b0ebb47a4171d1
   { path: "vote", component: VoteComponent },
   { path: "ticketbooking", component: TicketBookingComponent }
 ];
@@ -26,4 +32,8 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
+<<<<<<< HEAD
 export class IplRoutingModule {}
+=======
+export class IplRoutingModule {}
+>>>>>>> 3b5d29aab2f1fd95badf39a7a6b0ebb47a4171d1

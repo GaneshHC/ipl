@@ -1,6 +1,7 @@
 package com.wecp.progressive.dao;
 
 
+<<<<<<< HEAD
 import com.wecp.progressive.config.DatabaseConnectionManager;
 import com.wecp.progressive.entity.Team;
 
@@ -165,5 +166,10 @@ public class TeamDAOImpl implements TeamDAO {
         }
         return teams;
     }
+=======
+public class TeamDAOImpl {
+
+
+>>>>>>> 3b5d29aab2f1fd95badf39a7a6b0ebb47a4171d1
 
 }

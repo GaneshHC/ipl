@@ -1,4 +1,5 @@
 function login() {
+<<<<<<< HEAD
     var username = document.getElementById("loginUsername").value;
     var password = document.getElementById("loginPassword").value;
  
@@ -44,3 +45,26 @@ function register() {
 }
 module.exports = { login, register };
 // module.exports = { login, register };
+=======
+   
+    // You can perform login validation and authentication here
+    // For simplicity, let's just display an alert
+    
+}
+
+function register() {
+   
+
+    // Frontend validation for registration form
+    
+
+    // Validate email format
+    
+    // Validate username (no special characters)
+    
+
+    // Validate password (at least 8 characters, one capital letter, and one numeric)
+    
+}
+module.exports = { login, register };
+>>>>>>> 3b5d29aab2f1fd95badf39a7a6b0ebb47a4171d1

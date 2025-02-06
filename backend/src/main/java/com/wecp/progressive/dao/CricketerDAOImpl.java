@@ -1,5 +1,6 @@
 package com.wecp.progressive.dao;
 
+<<<<<<< HEAD
 import com.wecp.progressive.config.DatabaseConnectionManager;
 import com.wecp.progressive.entity.Cricketer;
 
@@ -183,5 +184,8 @@ public class CricketerDAOImpl implements CricketerDAO {
         }
         return cricketers;
     }
+=======
+public class CricketerDAOImpl {
+>>>>>>> 3b5d29aab2f1fd95badf39a7a6b0ebb47a4171d1
 
 }

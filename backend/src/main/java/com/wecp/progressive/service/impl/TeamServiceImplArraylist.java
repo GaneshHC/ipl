@@ -1,5 +1,6 @@
 package com.wecp.progressive.service.impl;
 
+<<<<<<< HEAD
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
@@ -29,5 +30,8 @@ public class TeamServiceImplArraylist implements TeamService {
         sortedTeamList.sort(Comparator.comparing(Team :: getTeamName));
         return sortedTeamList;
     }
+=======
+public class TeamServiceImplArraylist  {
+>>>>>>> 3b5d29aab2f1fd95badf39a7a6b0ebb47a4171d1
 
 }

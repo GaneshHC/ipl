@@ -1,5 +1,6 @@
 package com.wecp.progressive.service.impl;
 
+<<<<<<< HEAD
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -33,5 +34,8 @@ private static List<Cricketer> cricketersList =new ArrayList<>();
     }
 
     
+=======
+public class CricketerServiceImplArraylist  {
+>>>>>>> 3b5d29aab2f1fd95badf39a7a6b0ebb47a4171d1
 
 }

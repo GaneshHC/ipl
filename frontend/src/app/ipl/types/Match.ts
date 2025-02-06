@@ -36,4 +36,8 @@ export class Match {
         console.log(`Second Team: ${this.secondTeam.teamName}`);
         console.log(`Winner: ${this.winnerTeam.teamName}`);
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 3b5d29aab2f1fd95badf39a7a6b0ebb47a4171d1

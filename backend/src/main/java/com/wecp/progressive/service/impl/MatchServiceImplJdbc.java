@@ -1,5 +1,6 @@
 package com.wecp.progressive.service.impl;
 
+<<<<<<< HEAD
 import com.wecp.progressive.dao.MatchDAO;
 import com.wecp.progressive.entity.Match;
 import com.wecp.progressive.service.MatchService;
@@ -39,5 +40,8 @@ public class MatchServiceImplJdbc implements MatchService {
     public void deleteMatch(int matchId) throws SQLException {
         matchDAO.deleteMatch(matchId);
     }
+=======
+public class MatchServiceImplJdbc  {
+>>>>>>> 3b5d29aab2f1fd95badf39a7a6b0ebb47a4171d1
 
 }

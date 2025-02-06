@@ -1,5 +1,6 @@
 package com.wecp.progressive.service.impl;
 
+<<<<<<< HEAD
 import com.wecp.progressive.entity.Team;
 import com.wecp.progressive.exception.TeamAlreadyExistsException;
 import com.wecp.progressive.exception.TeamDoesNotExistException;
@@ -92,3 +93,8 @@ public class TeamServiceImplJpa  implements TeamService {
         teamRepository.deleteById(teamId);
     }
 }
+=======
+public class TeamServiceImplJpa  {
+
+}
+>>>>>>> 3b5d29aab2f1fd95badf39a7a6b0ebb47a4171d1

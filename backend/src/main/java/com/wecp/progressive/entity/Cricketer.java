@@ -1,5 +1,6 @@
 package com.wecp.progressive.entity;
 
+<<<<<<< HEAD
 import javax.persistence.*;
 import java.util.Comparator;
 
@@ -113,4 +114,8 @@ public class Cricketer implements Comparable<Cricketer> {
         return Comparator.comparingInt(Cricketer::getExperience)
                 .compare(this, otherCricketer);
     }
+=======
+public class Cricketer {
+
+>>>>>>> 3b5d29aab2f1fd95badf39a7a6b0ebb47a4171d1
 }

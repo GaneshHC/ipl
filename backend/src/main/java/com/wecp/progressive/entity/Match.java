@@ -1,5 +1,6 @@
 package com.wecp.progressive.entity;
 
+<<<<<<< HEAD
 import javax.persistence.*;
 import java.util.Date;
 
@@ -106,5 +107,8 @@ public class Match {
     public void setStatus(String status) {
         this.status = status;
     }
+=======
+public class Match {
+>>>>>>> 3b5d29aab2f1fd95badf39a7a6b0ebb47a4171d1
 
 }

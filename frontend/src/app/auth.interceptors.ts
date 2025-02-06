@@ -37,4 +37,8 @@ export class AuthInterceptor implements HttpInterceptor {
     // Pass the modified request to the next interceptor or to the HTTP handler
     return next.handle(request);
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 3b5d29aab2f1fd95badf39a7a6b0ebb47a4171d1

@@ -1,5 +1,6 @@
 package com.wecp.progressive.service.impl;
 
+<<<<<<< HEAD
 import com.wecp.progressive.dao.TeamDAO;
 import com.wecp.progressive.entity.Team;
 import com.wecp.progressive.service.TeamService;
@@ -49,4 +50,8 @@ public class TeamServiceImplJdbc implements TeamService {
     public void deleteTeam(int teamId) throws SQLException {
         teamDAO.deleteTeam(teamId);
     }
+=======
+public class TeamServiceImplJdbc  {
+
+>>>>>>> 3b5d29aab2f1fd95badf39a7a6b0ebb47a4171d1
 }

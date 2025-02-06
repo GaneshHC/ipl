@@ -1,10 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+<<<<<<< HEAD
 import { IplService } from '../../services/ipl.service';
 import { Cricketer } from '../../types/Cricketer';
 import { Team } from '../../types/Team';
 import { Vote } from '../../types/Vote';
 import { HttpErrorResponse } from '@angular/common/http';
+=======
+import { Vote } from '../../types/Vote';
+>>>>>>> 3b5d29aab2f1fd95badf39a7a6b0ebb47a4171d1
 
 @Component({
   selector: 'app-vote',
@@ -16,6 +20,7 @@ export class VoteComponent implements OnInit {
   vote: Vote | null = null;
   successMessage: string | null = null;
   errorMessage: string | null = null;
+<<<<<<< HEAD
   teams: Team[] = [];
   cricketers: Cricketer[] = [];
   
@@ -71,11 +76,24 @@ export class VoteComponent implements OnInit {
   loadCricketers(): void {
     this.iplService.getAllCricketers().subscribe((cricketers) => {
       this.cricketers = cricketers;
+=======
+
+  constructor(private formBuilder: FormBuilder) {}
+
+  ngOnInit(): void {
+    this.voteForm = this.formBuilder.group({
+      voteId: [null, Validators.required],
+      email: ['', [Validators.required, Validators.email]],
+      category: ['', Validators.required],
+      cricketerId: [null, Validators.required],
+      teamId: [null, Validators.required]
+>>>>>>> 3b5d29aab2f1fd95badf39a7a6b0ebb47a4171d1
     });
   }
 
   onSubmit(): void {
     if (this.voteForm.valid) {
+<<<<<<< HEAD
       this.castVote();
     } else {
       this.errorMessage = 'Please fill out all required fields correctly.';
@@ -113,3 +131,20 @@ export class VoteComponent implements OnInit {
     console.error('An error occurred:', this.errorMessage);
   }
 }
+=======
+      this.vote = this.voteForm.value;
+      this.successMessage = 'Vote submitted successfully!';
+      this.errorMessage = null;
+      console.log(this.vote);
+      this.resetForm();
+    } else {
+      this.successMessage = null;
+      this.errorMessage = 'Please fill out all required fields correctly.';
+    }
+  }
+
+  resetForm(): void {
+    this.voteForm.reset();
+  }
+}
+>>>>>>> 3b5d29aab2f1fd95badf39a7a6b0ebb47a4171d1

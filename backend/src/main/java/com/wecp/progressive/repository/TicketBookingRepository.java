@@ -1,5 +1,6 @@
 package com.wecp.progressive.repository;
 
+<<<<<<< HEAD
 import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -26,3 +27,8 @@ public interface TicketBookingRepository extends JpaRepository<TicketBooking, In
     @Query("DELETE FROM TicketBooking t WHERE t.match.matchId IN :matchId")
     void deleteByMatchId(@Param("matchId") int matchId);
 }
+=======
+
+public interface TicketBookingRepository {
+}
+>>>>>>> 3b5d29aab2f1fd95badf39a7a6b0ebb47a4171d1

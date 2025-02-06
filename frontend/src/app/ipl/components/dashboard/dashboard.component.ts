@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Component, OnInit } from '@angular/core';
 import { IplService } from '../../services/ipl.service';
 import { Team } from '../../types/Team';
@@ -212,4 +213,10 @@ export class DashboardComponent implements OnInit {
       });
     }
   }
+=======
+
+export class DashboardComponent  {
+ 
+
+>>>>>>> 3b5d29aab2f1fd95badf39a7a6b0ebb47a4171d1
 }

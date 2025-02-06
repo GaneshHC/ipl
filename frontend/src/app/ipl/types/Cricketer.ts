@@ -38,4 +38,8 @@ export class Cricketer {
         console.log(`Team: ${this.team.teamName}`);
         console.log(`Cricketer Name: ${this.cricketerName}`);
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 3b5d29aab2f1fd95badf39a7a6b0ebb47a4171d1

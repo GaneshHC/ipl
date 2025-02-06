@@ -1,6 +1,7 @@
 package com.wecp.progressive.controller;
 
 import com.wecp.progressive.entity.Team;
+<<<<<<< HEAD
 import com.wecp.progressive.exception.TeamAlreadyExistsException;
 import com.wecp.progressive.exception.TeamDoesNotExistException;
 import com.wecp.progressive.service.impl.TeamServiceImplArraylist;
@@ -100,5 +101,42 @@ public class TeamController {
     public ResponseEntity<List<Team>> getAllTeamsSortedByNameFromArrayList() {
         List<Team> teamList = teamServiceImplArraylist.getAllTeamsSortedByName();
         return new ResponseEntity<>(teamList, HttpStatus.OK);
+=======
+import org.springframework.http.ResponseEntity;
+
+import java.util.List;
+
+public class TeamController {
+    public ResponseEntity<List<Team>> getAllTeams() {
+        return null;
+    }
+
+    public ResponseEntity<Team> getTeamById(int teamId) {
+        return null;
+    }
+
+    public ResponseEntity<Integer> addTeam(Team team) {
+        return null;
+    }
+
+    public ResponseEntity<Void> updateTeam(int teamId, Team team) {
+        return null;
+    }
+
+    public ResponseEntity<Void> deleteTeam(int teamId) {
+        return null;
+    }
+
+    public ResponseEntity<List<Team>> getAllTeamsFromArrayList() {
+        return null;
+    }
+
+    public ResponseEntity<Integer> addTeamToArrayList(Team team) {
+        return null;
+    }
+
+    public ResponseEntity<List<Team>> getAllTeamsSortedByNameFromArrayList() {
+        return null;
+>>>>>>> 3b5d29aab2f1fd95badf39a7a6b0ebb47a4171d1
     }
 }

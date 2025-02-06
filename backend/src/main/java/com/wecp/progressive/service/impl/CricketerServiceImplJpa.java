@@ -1,5 +1,6 @@
 package com.wecp.progressive.service.impl;
 
+<<<<<<< HEAD
 import com.wecp.progressive.entity.Cricketer;
 import com.wecp.progressive.exception.TeamCricketerLimitExceededException;
 import com.wecp.progressive.repository.CricketerRepository;
@@ -68,4 +69,8 @@ public class CricketerServiceImplJpa implements CricketerService {
     public List<Cricketer> getCricketersByTeam(int teamId) throws SQLException {
         return cricketerRepository.findByTeam_TeamId(teamId);
     }
+=======
+public class CricketerServiceImplJpa  {
+
+>>>>>>> 3b5d29aab2f1fd95badf39a7a6b0ebb47a4171d1
 }

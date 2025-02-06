@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // package com.wecp.progressive.jwt;
 
 // import io.jsonwebtoken.Claims;
@@ -153,4 +154,10 @@ public class JwtUtil {
         final String username = extractUsername(token);
         return (username.equals(userDetails.getUsername()) && !isTokenExpired(token));
     }
+=======
+package com.wecp.progressive.jwt;
+
+public class JwtUtil {
+
+>>>>>>> 3b5d29aab2f1fd95badf39a7a6b0ebb47a4171d1
 }

@@ -1,5 +1,6 @@
 package com.wecp.progressive.entity;
 
+<<<<<<< HEAD
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -70,4 +71,8 @@ public class Team implements Comparable<Team>{
     public int compareTo(Team otherTeam) {
         return this.getTeamName().compareTo(otherTeam.getTeamName());
     }
+=======
+public class Team {
+
+>>>>>>> 3b5d29aab2f1fd95badf39a7a6b0ebb47a4171d1
 }

@@ -1,5 +1,6 @@
 package com.wecp.progressive.exception;
 
+<<<<<<< HEAD
 public class TeamDoesNotExistException extends RuntimeException{
 
     public TeamDoesNotExistException(String message)
@@ -7,3 +8,7 @@ public class TeamDoesNotExistException extends RuntimeException{
         super(message);
     }
 }
+=======
+public class TeamDoesNotExistException {
+}
+>>>>>>> 3b5d29aab2f1fd95badf39a7a6b0ebb47a4171d1

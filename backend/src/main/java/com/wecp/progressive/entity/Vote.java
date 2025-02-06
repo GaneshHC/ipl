@@ -1,5 +1,6 @@
 package com.wecp.progressive.entity;
 
+<<<<<<< HEAD
 import javax.annotation.Generated;
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
@@ -77,3 +78,8 @@ public class Vote {
         this.team = team;
     }
 }
+=======
+public class Vote {
+
+}
+>>>>>>> 3b5d29aab2f1fd95badf39a7a6b0ebb47a4171d1
